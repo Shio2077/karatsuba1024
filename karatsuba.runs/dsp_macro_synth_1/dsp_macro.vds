@@ -1,0 +1,414 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue May 20 16:14:53 2025
+# Process ID: 2181166
+# Current directory: /home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1
+# Command line: vivado -log dsp_macro.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsp_macro.tcl
+# Log file: /home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1/dsp_macro.vds
+# Journal file: /home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1/vivado.jou
+# Running On: C58, OS: Linux, CPU Frequency: 4141.550 MHz, CPU Physical cores: 16, Host memory: 67080 MB
+#-----------------------------------------------------------
+source dsp_macro.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dsp_macro
+Command: synth_design -top dsp_macro -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2181216
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/AMD/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2443.625 ; gain = 369.801 ; free physical = 2747 ; free virtual = 41122
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3427.738; parent = 2443.629; children = 984.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dsp_macro' [/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.gen/sources_1/ip/dsp_macro/synth/dsp_macro.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_INDEP_CE bound to: 0 - type: integer 
+	Parameter C_HAS_CED bound to: 0 - type: integer 
+	Parameter C_HAS_CEA bound to: 0 - type: integer 
+	Parameter C_HAS_CEB bound to: 0 - type: integer 
+	Parameter C_HAS_CEC bound to: 0 - type: integer 
+	Parameter C_HAS_CECONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_CEM bound to: 0 - type: integer 
+	Parameter C_HAS_CEP bound to: 0 - type: integer 
+	Parameter C_HAS_CESEL bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_HAS_INDEP_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRD bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRA bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRB bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRC bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRM bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRP bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRCONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRSEL bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCIN bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYIN bound to: 0 - type: integer 
+	Parameter C_HAS_ACIN bound to: 0 - type: integer 
+	Parameter C_HAS_BCIN bound to: 0 - type: integer 
+	Parameter C_HAS_PCIN bound to: 0 - type: integer 
+	Parameter C_HAS_A bound to: 1 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_CONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_SQUARE_FCN bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 25 - type: integer 
+	Parameter C_B_WIDTH bound to: 18 - type: integer 
+	Parameter C_C_WIDTH bound to: 48 - type: integer 
+	Parameter C_D_WIDTH bound to: 18 - type: integer 
+	Parameter C_CONCAT_WIDTH bound to: 48 - type: integer 
+	Parameter C_P_MSB bound to: 42 - type: integer 
+	Parameter C_P_LSB bound to: 0 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 0 - type: integer 
+	Parameter C_HAS_ACOUT bound to: 0 - type: integer 
+	Parameter C_HAS_BCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYOUT bound to: 0 - type: integer 
+	Parameter C_HAS_PCOUT bound to: 0 - type: integer 
+	Parameter C_CONSTANT_1 bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 92 - type: integer 
+	Parameter C_OPMODES bound to: 000100100000010100000000 - type: string 
+	Parameter C_REG_CONFIG bound to: 00000000000011000011000001000000 - type: string 
+	Parameter C_TEST_CORE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'dsp_macro_v1_0_2' declared at '/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.gen/sources_1/ip/dsp_macro/hdl/dsp_macro_v1_0_rfs.vhd:5245' bound to instance 'U0' of component 'dsp_macro_v1_0_2' [/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.gen/sources_1/ip/dsp_macro/synth/dsp_macro.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'dsp_macro' (0#1) [/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.gen/sources_1/ip/dsp_macro/synth/dsp_macro.vhd:69]
+WARNING: [Synth 8-7129] Port CE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEP in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRP in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEL[0] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[47] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[46] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[45] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[44] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[43] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[42] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[41] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[40] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[39] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[38] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[37] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[36] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[35] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[34] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[33] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[32] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[31] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[30] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[29] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[28] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[27] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[26] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[25] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[24] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[23] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[22] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[21] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[20] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[19] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[18] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[17] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[16] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[15] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[14] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[13] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[12] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[11] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[10] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[9] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[8] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[7] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[6] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[5] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[4] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[3] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[2] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[1] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[0] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[17] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[16] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[15] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[14] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[13] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[12] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[11] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[10] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[9] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[8] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[7] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[6] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[5] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[4] in module dsp_macro_synth is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2543.594 ; gain = 469.770 ; free physical = 2473 ; free virtual = 41084
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3527.707; parent = 2543.598; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2561.406 ; gain = 487.582 ; free physical = 2456 ; free virtual = 41079
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3545.520; parent = 2561.410; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2561.406 ; gain = 487.582 ; free physical = 2456 ; free virtual = 41081
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3545.520; parent = 2561.410; children = 984.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2567.344 ; gain = 0.000 ; free physical = 2423 ; free virtual = 41039
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.gen/sources_1/ip/dsp_macro/dsp_macro_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.gen/sources_1/ip/dsp_macro/dsp_macro_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2634.344 ; gain = 0.000 ; free physical = 2760 ; free virtual = 41046
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2634.344 ; gain = 0.000 ; free physical = 2760 ; free virtual = 41046
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/AMD/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2976 ; free virtual = 41271
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2974 ; free virtual = 41268
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2973 ; free virtual = 41267
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2970 ; free virtual = 41267
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2973 ; free virtual = 41276
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1969.582; parent = 1735.288; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2834 ; free virtual = 41149
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2090.105; parent = 1855.853; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2834 ; free virtual = 41149
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2090.844; parent = 1856.591; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2818 ; free virtual = 41133
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.141; parent = 1856.888; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2812 ; free virtual = 41137
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.355; parent = 1857.103; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2812 ; free virtual = 41136
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.371; parent = 1857.118; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2811 ; free virtual = 41136
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.402; parent = 1857.149; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2811 ; free virtual = 41137
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.480; parent = 1857.228; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2811 ; free virtual = 41136
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.480; parent = 1857.228; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2810 ; free virtual = 41136
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.496; parent = 1857.243; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name               | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|xbip_dsp48e1_wrapper_v3_0 | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 1    | 0    | 
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     1|
+|2     |LUT2    |     1|
+|3     |LUT3    |     1|
+|4     |FDRE    |    98|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2809 ; free virtual = 41135
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.527; parent = 1857.274; children = 234.294
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3586.441; parent = 2602.332; children = 984.109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 157 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2634.344 ; gain = 487.582 ; free physical = 2832 ; free virtual = 41158
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2634.344 ; gain = 560.520 ; free physical = 2831 ; free virtual = 41158
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2634.344 ; gain = 0.000 ; free physical = 2831 ; free virtual = 41157
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2634.344 ; gain = 0.000 ; free physical = 2921 ; free virtual = 41249
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d67544cf
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.344 ; gain = 891.082 ; free physical = 3120 ; free virtual = 41449
+INFO: [Common 17-1381] The checkpoint '/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1/dsp_macro.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dsp_macro, cache-ID = e233c8102cb0e47d
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/hydrangea/project/AMD/karatsuba/karatsuba/karatsuba.runs/dsp_macro_synth_1/dsp_macro.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dsp_macro_utilization_synth.rpt -pb dsp_macro_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 20 16:15:28 2025...

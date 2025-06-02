@@ -1,0 +1,90 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Jun  2 22:50:08 2025
+| Host         : C58 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+| Design       : top_wrapper
+| Device       : xc7z020
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    12 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1370 |          348 |
+| No           | No                    | Yes                    |           10517 |         2326 |
+| No           | Yes                   | No                     |             216 |           58 |
+| Yes          | No                    | No                     |             256 |           41 |
+| Yes          | No                    | Yes                    |           12477 |         2462 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+-----------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal                |                    Enable Signal                    |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------+-----------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/addIdx[5]_i_1_n_0         | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |                2 |              6 |         3.00 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/addCnt[5]_i_1_n_0         | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |                4 |              6 |         1.50 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/kaPushCnt[5]_i_1_n_0      | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |                4 |             17 |         4.25 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/ka128aReg                 | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |              142 |            256 |         1.80 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/enb_reg_n_0_[0]           |                                           |               41 |            256 |         6.24 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 |                                                     |                                           |              348 |           1716 |         4.93 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/u_adder/sumD              | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |              526 |           2014 |         3.83 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/u_adder/sum[2047]_i_1_n_0 | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |              295 |           2048 |         6.94 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/util_reduced_logic_1/inst/Res                 | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |              320 |           2048 |         6.40 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/pValid_i_1_n_0            | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |              516 |           2049 |         3.97 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 | top_i/kaReduced128_0/inst/addValid_reg_n_0          | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |              653 |           4033 |         6.18 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0 |                                                     | top_i/kaReduced128_0/inst/u_adder/rst_n_0 |             2384 |          10733 |         4.50 |
++--------------------------------------------+-----------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+
+

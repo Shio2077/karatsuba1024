@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_kaReduced_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_kaReduced" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="197,546.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="199,668.667 ns"></ZoomEndTime>
+      <Cursor1Time time="199,315.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="156"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject type="logic" fp_name="/tb_kaReduced/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/rst_n">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/valid_i">
+      <obj_property name="ElementShortName">valid_i</obj_property>
+      <obj_property name="ObjectShortName">valid_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/a">
+      <obj_property name="ElementShortName">a[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">a[1023:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/b">
+      <obj_property name="ElementShortName">b[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">b[1023:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/p">
+      <obj_property name="ElementShortName">p[2047:0]</obj_property>
+      <obj_property name="ObjectShortName">p[2047:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/p_valid">
+      <obj_property name="ElementShortName">p_valid</obj_property>
+      <obj_property name="ObjectShortName">p_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/u_kaReduced/kValid">
+      <obj_property name="ElementShortName">kValid</obj_property>
+      <obj_property name="ObjectShortName">kValid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/kaPushCnt">
+      <obj_property name="ElementShortName">kaPushCnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">kaPushCnt[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/u_kaReduced/kaPushFin">
+      <obj_property name="ElementShortName">kaPushFin</obj_property>
+      <obj_property name="ObjectShortName">kaPushFin</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/u_kaReduced/pGetFlg">
+      <obj_property name="ElementShortName">pGetFlg</obj_property>
+      <obj_property name="ObjectShortName">pGetFlg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/kaPopCnt">
+      <obj_property name="ElementShortName">kaPopCnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">kaPopCnt[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/kaP">
+      <obj_property name="ElementShortName">kaP[255:0]</obj_property>
+      <obj_property name="ObjectShortName">kaP[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_blkram/wea">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_blkram/addra">
+      <obj_property name="ElementShortName">addra[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_blkram/dina">
+      <obj_property name="ElementShortName">dina[255:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/addCnt">
+      <obj_property name="ElementShortName">addCnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addCnt[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/u_kaReduced/u_blkram/enb">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/addIdx">
+      <obj_property name="ElementShortName">addIdx[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addIdx[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/addSftIdx">
+      <obj_property name="ElementShortName">addSftIdx[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addSftIdx[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_blkram/addrb">
+      <obj_property name="ElementShortName">addrb[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_blkram/doutb">
+      <obj_property name="ElementShortName">doutb[255:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/kaPSft">
+      <obj_property name="ElementShortName">kaPSft[2047:0]</obj_property>
+      <obj_property name="ObjectShortName">kaPSft[2047:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_adder/a">
+      <obj_property name="ElementShortName">a[2047:0]</obj_property>
+      <obj_property name="ObjectShortName">a[2047:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_adder/b">
+      <obj_property name="ElementShortName">b[2047:0]</obj_property>
+      <obj_property name="ObjectShortName">b[2047:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_kaReduced/u_kaReduced/u_adder/sum">
+      <obj_property name="ElementShortName">sum[2047:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[2047:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_kaReduced/ready_o">
+      <obj_property name="ElementShortName">ready_o</obj_property>
+      <obj_property name="ObjectShortName">ready_o</obj_property>
+   </wvobject>
+</wave_config>
