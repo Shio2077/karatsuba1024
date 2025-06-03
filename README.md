@@ -16,7 +16,7 @@ This project implements a Karatsuba multiplier in Verilog. The source files are 
 
 ## Performance
 
-The `kaReduce128` module can operate at a 100 MHz clock frequency and completes a single multiplication in approximately 22 µs.
+The `kaReduce128` module can operate at a 100 MHz clock frequency and completes a single multiplication in approximately 22 µs. Optimization is still in progress.
 
 ## IP Settings
 ### 1. BRAM
@@ -40,15 +40,13 @@ The `kaReduce128` module can operate at a 100 MHz clock frequency and completes 
 
 ## Resource Utilization (Zynq-7020)
 
-| Resource | Used  | Available | Utilization |
-|----------|-------|-----------|-------------|
-| LUT      | 14,438 | 53,200     | 27.14%      |
-| LUTRAM   | 346   | 17,400     | 1.99%       |
-| FF       | 24,836 | 106,400    | 23.34%      |
-| BRAM     | 4     | 140        | 2.86%       |
-| DSP      | 27    | 220        | 12.27%      |
-| IO       | 1     | 200        | 0.50%       |
-| BUFG     | 1     | 32         | 3.13%       |
+| Resource | Used  | 
+|----------|-------|
+| LUT      | 13,719 |
+| LUTRAM   | 346   | 
+| FF       | 23,812 |
+| BRAM     | 4     | 
+| DSP      | 27    | 
 
 ## License
 
