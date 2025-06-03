@@ -1,7 +1,7 @@
 // 1024 bit multiplier
 // achieved by karatsuba 128 bit multiplier 
 
-module kaReduced128 #(parameter WIDTH = 1024)(
+module kaReduced1024 #(parameter WIDTH = 1024)(
     input wire                  clk,
     input wire                  rst_n,
     input wire                  valid_i,

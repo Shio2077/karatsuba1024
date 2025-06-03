@@ -10,7 +10,7 @@ This project implements a Karatsuba multiplier in Verilog. The source files are 
 - **ka256.v** – 256-bit Karatsuba multiplier (*difficult to deploy on FPGA*)  
 - **ka512.v** – 512-bit Karatsuba multiplier (*cannot be deployed on FPGA; for reference only*)  
 - **ka1024.v** – 1024-bit Karatsuba multiplier (*cannot be deployed on FPGA; for reference only*)  
-- **kaReduce128.v** – **A 1024-bit Karatsuba multiplier implemented using the 128-bit module and adder components; deployable on Zynq-7020 SoC** 
+- **kaReduced1024.v** – **A 1024-bit Karatsuba multiplier implemented using the 128-bit module and adder components; deployable on Zynq-7020 SoC** 
 - **wide_adder.v** – Adder module  
 - **wire_conn.v** – Connection module, for testing only  
 
