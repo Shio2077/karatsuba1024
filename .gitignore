@@ -8,6 +8,7 @@ karatsuba.sim/
 
 # Design files
 karatsuba.srcs/sources_1/new/kaExt.v
+karatsuba.srcs/sources_1/new/kaReduced.v
 
 
 # Vivado waveform config files 
