@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../karatsuba.gen/sources_1/ip/dsp_macro/sim/dsp_macro.vhd" \
+
+nosort
