@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_kaReduced_behav/xsimk -simmode gui -wdb tb_kaReduced_behav.wdb -simrunnum 0 -socket 46253
-Design successfully loaded
-Design Loading Memory Usage: 36232 KB (Peak: 36232 KB)
-Design Loading CPU Usage: 90 ms
-Simulation completed
-Simulation Memory Usage: 126596 KB (Peak: 175500 KB)
-Simulation CPU Usage: 1190 ms

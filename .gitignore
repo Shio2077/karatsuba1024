@@ -1,0 +1,14 @@
+# Vivado generated folders
+karatsuba.cache/
+karatsuba.gen/
+karatsuba.hw/
+karatsuba.ip_user_files/
+karatsuba.runs/
+karatsuba.sim/
+
+
+# Vivado waveform config files 
+*.wcfg
+
+# VSCode workspace settings
+.vscode
